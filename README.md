@@ -24,45 +24,26 @@ Save the Clean data to the file
 Name: souvik kundu
 register no.212221230105
 ```
-
+~~~
 import pandas as pd
-
 df=pd.read_csv("Data_set.csv")
-
 df.head(10)
-
 df.info()
-
 df.tail()
-
 df['show_name']=df['show_name'].fillna(df['show_name'].mode()[0])
-
 df.head()
-
 df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
-
 df.head()
-
 df['original_network']=df['original_network'].fillna(df['original_network'].mode()[0])
-
 df.head()
-
 df['rating']=df['rating'].fillna(df['rating'].mode()[0])
-
 df.head()
-
 df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mode()[0])
-
 df.head()
-
 df['watchers']=df['watchers'].fillna(df['watchers'].mode()[0])
-
 df.head()
-
 df.info()
-
-
-
+~~~
 
 # OUTPUT
 ![gitlogo](dataclean.jpg)
